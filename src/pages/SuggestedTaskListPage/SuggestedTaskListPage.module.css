@@ -1,0 +1,24 @@
+.container{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.backButton{
+    transform: rotate(270deg);
+    width: 65px;
+    height: 65px;
+}
+.title{
+    display: grid;
+    grid-template-columns: 65px 1fr 65px;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}

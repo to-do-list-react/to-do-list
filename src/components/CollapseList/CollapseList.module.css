@@ -1,0 +1,8 @@
+.collapseButton{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.collapseButton *{
+    user-select: none;
+}

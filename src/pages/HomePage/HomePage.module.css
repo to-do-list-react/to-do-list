@@ -1,0 +1,37 @@
+.container{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    position: relative;
+}
+.addCategoryButton{
+    display: flex;
+    width: 500px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addCategoryButton * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addCategorySpan{
+    user-select:"none";
+}
+.themeButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.themeButton img{
+    width: 75px;
+    height: 75px;
+}

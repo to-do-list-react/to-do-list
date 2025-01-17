@@ -1,0 +1,16 @@
+.ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+}
+.ul li{
+    padding: 5px 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    user-select: none;
+}
+.ul li:last-child{
+    border-bottom: none !important;
+}

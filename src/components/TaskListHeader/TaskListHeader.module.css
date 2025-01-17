@@ -1,0 +1,70 @@
+.taskHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.taskHeaderText{
+    width: calc(100% - 50px);
+    text-align: center;
+    padding: 0 20px;
+    overflow-x: hidden;
+    font-size: 36px;
+}
+.menuButton{
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+.menu{
+    position: absolute;
+    right: 290px;
+    top: 100px;
+}
+.menuItems{
+    padding: 20px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    position: absolute;
+    z-index: 1001;
+    font-size: 32px;
+    border-radius: 10px;
+}
+.blackMenuItems{
+    composes: menuItems;
+    background-color: rgb(63,63,63);
+}
+.whiteMenuItems{
+    composes: menuItems;
+    background: rgb(92,112,190);
+    background: linear-gradient(180deg, rgba(92,112,190,1) 0%, rgba(120,140,222,1) 100%);
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.menuItem{
+    padding: 5px 10px;
+}
+.blackMenuItem{
+    composes: menuItem;
+}
+.whiteMenuItem{
+    composes: menuItem;
+}
+.blackMenuItem:hover{
+    background-color: rgb(127,127,127,1);
+}
+.whiteMenuItem:hover{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.backButton{
+    width: 65px;
+    height: 65px;
+    transform: rotate(270deg);
+}
+

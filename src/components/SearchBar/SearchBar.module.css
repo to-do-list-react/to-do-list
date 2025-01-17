@@ -1,0 +1,36 @@
+.Img{
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+}
+.searchInput{
+    height: 75px;
+}
+
+.coloredImg{
+    composes: Img;
+}
+.transparentImg{
+    composes: Img;
+}
+.searchBar{
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 10px;
+}
+.dropDownList{
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}

@@ -1,0 +1,28 @@
+.container{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y:auto;
+}
+.addStageButton{
+    display: flex;
+    width: 500px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addStageButton * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addStageSpan{
+    user-select:"none";
+}
+.focusAwareInput{
+    width: 300px;
+    background-color: green;
+}

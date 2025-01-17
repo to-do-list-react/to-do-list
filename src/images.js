@@ -1,0 +1,45 @@
+import themeList from "./themeList"
+const IMAGES={
+    [themeList.WHITE]:{
+    emptySearch:"./images/white/search/empty-search.png",
+    coloredSearch:"./images/white/search/colored-search.png",
+    coloredStar:"./images/white/star/colored-star.png",
+    emptyStar:"./images/white/star/empty-star.png",
+    coloredCalendar:"./images/white/calendar/colored-calendar.png",
+    emptyCalendar:"./images/white/calendar/empty-calendar.png",
+    emptySun:"./images/white/sun/empty-sun.png",
+    coloredSun:"./images/white/sun/colored-sun.png",
+    funnySun:"./images/white/sun/funny-sun.png",
+    emptyPlus:"./images/white/plus/empty-plus.png",
+    coloredPlus:"./images/white/plus/colored-plus.png",
+    emptyAdd:"./images/white/add/empty-add.png",
+    coloredAdd:"./images/white/add/colored-add.png",
+    theme:"./images/white/theme/theme.png",
+    coloredCollapse:"./images/white/collapse/colored-collapse.png",
+    emptyCollapse:"./images/white/collapse/empty-collapse.png",
+    emptyDelete:"./images/white/delete/empty-delete.png",
+    coloredDelete:"./images/white/delete/colored-delete.png",
+    },
+    [themeList.BLACK]:{
+    emptySearch:"./images/black/search/empty-search.png",
+    coloredSearch:"./images/black/search/colored-search.png",
+    coloredStar:"./images/black/star/colored-star.png",
+    emptyStar:"./images/black/star/empty-star.png",
+    coloredCalendar:"./images/black/calendar/colored-calendar.png",
+    emptyCalendar:"./images/black/calendar/empty-calendar.png",
+    emptySun:"./images/black/sun/empty-sun.png",
+    coloredSun:"./images/black/sun/colored-sun.png",
+    funnySun:"./images/black/sun/funny-sun.png",
+    emptyPlus:"./images/black/plus/empty-plus.png",
+    coloredPlus:"./images/black/plus/colored-plus.png",
+    emptyAdd:"./images/black/add/empty-add.png",
+    coloredAdd:"./images/black/add/colored-add.png",
+    theme:"./images/black/theme/theme.png",
+    coloredCollapse:"./images/black/collapse/colored-collapse.png",
+    emptyCollapse:"./images/black/collapse/empty-collapse.png",
+    emptyDelete:"./images/black/delete/empty-delete.png",
+    coloredDelete:"./images/black/delete/colored-delete.png",
+    }
+}
+
+export default IMAGES

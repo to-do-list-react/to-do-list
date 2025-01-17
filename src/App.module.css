@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+
+  font-size: 32px;
+  display: grid;
+  @media (min-width: 1440px) {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+  @media (max-width: 1440px) {
+    grid-template: 1fr / 1fr;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.blackApp{
+  composes: App;
+  background-color: rgb(8,8,8);
+  color: rgb(230,230,230);
+}
+.whiteApp{
+  composes: App;
+  background: rgb(92,112,190);
+  background: linear-gradient(180deg, rgba(92,112,190,1) 0%, rgba(120,140,222,1) 100%);
+  color: white;
+}
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid white;
+	border-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #74b9ff87;
+	border-radius: 10px;
+}
+.page{
+  box-shadow: 5px 1px 1px 0px rgba(255,255,255,0.25);
+  background-color: inherit;
+  background: inherit;
+  border-right: 5px solid rgba(255,255,255,0.25);
+}
+
+.homePage{
+  composes: page;
+  z-index: 1;
+  @media (max-width: 1440px) {
+    position: absolute;
+    width: 100vw;
+  }
+}
+.taskListPage{
+  composes: page;
+  z-index: 2;
+  @media (max-width: 1440px) {
+    position: absolute;
+    width: 100vw;
+  }
+}
+.taskStagePage{
+  composes: page;
+  z-index: 3;
+  @media (max-width: 1440px) {
+    position: absolute;
+    width: 100vw;
+  }
+}

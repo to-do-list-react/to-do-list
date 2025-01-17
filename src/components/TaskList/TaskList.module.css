@@ -1,0 +1,14 @@
+/* Стили для календаря */
+.datePicker {
+    position: absolute;
+    z-index: 1000;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

@@ -1,0 +1,13 @@
+.container{
+    margin: auto;
+    padding-bottom: 120px;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: calc(100vh - 120px);
+    overflow-y:auto;
+    overflow-x:auto;
+    position: relative;
+}

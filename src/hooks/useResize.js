@@ -1,0 +1,29 @@
+import React, { useEffect, useState } from "react";
+import {
+  SCREEN_SM, SCREEN_MD, SCREEN_LG, SCREEN_XL, SCREEN_XXL,
+} from './screenBreakpoints';
+
+export const useResize = () =>{
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        function resizeHandler(e){
+            setWidth(e.target.innerWidth);
+        }
+
+        window.addEventListener('resize',resizeHandler);
+
+        return ()=>{
+            window.removeEventListener('resize',resizeHandler);
+        }
+    },[]);
+
+    return {
+        width,
+        isScreenSm: width >= SCREEN_SM,
+        isScreenMd: width >= SCREEN_MD,
+        isScreenLg: width >= SCREEN_LG,
+        isScreenXl: width >= SCREEN_XL,
+        isScreenXxl: width >= SCREEN_XXL,
+      };
+}

@@ -1,0 +1,56 @@
+.td{
+    user-select: none;
+    font-size: 20px;
+}
+.blackSelectedTd{
+    composes: td;
+    background-color: rgb(225,225,225);
+    color: rgb(66,66,66);
+    border-radius: 33%;
+}
+.whiteSelectedTd{
+    composes: td;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 33%;
+}
+.calendarContainer{
+    height: min-content;
+    width: min-content;
+    min-height: 260px;
+    min-width: 220px;
+    position: absolute;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.blackCalendarContainer{
+    composes: calendarContainer;
+    background-color: rgb(66,66,66);
+    color: rgb(225,225,225);
+}
+.whiteCalendarContainer{
+    composes: calendarContainer;
+    background: rgb(92,112,190);
+    background: linear-gradient(180deg, rgba(92,112,190,1) 0%, rgba(120,140,222,1) 100%);
+    color: white;
+}
+.calendarTableBody{
+    margin: 0 15px 0 15px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+}
+.controls{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.calendarTableTr{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.controls *{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}

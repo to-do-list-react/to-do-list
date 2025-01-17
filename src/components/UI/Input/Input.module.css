@@ -1,0 +1,29 @@
+.input{
+    font-family: inherit; 
+    font-size: inherit; 
+    line-height: inherit; 
+    margin: 0; 
+    border: none;
+    background-color: transparent;
+    max-width: inherit;
+}
+.input::placeholder {
+    opacity: 0.4;
+  }
+.input:focus {
+    outline: 0;
+  }
+  .whiteinput {
+    composes: input;
+    color: white;
+  }
+  .whiteinput::placeholder{
+    color: white;
+  }
+  .blackinput {
+    composes: input;
+    color: rgb(140,140,140);
+  }
+  .blackinput::placeholder{
+    color: rgb(140,140,140);
+  }
